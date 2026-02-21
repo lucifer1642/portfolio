@@ -1,0 +1,7 @@
+
+> portfolio@0.1.0 build
+> npx @cloudflare/next-on-pages
+
+Need to install the following packages:
+@cloudflare/next-on-pages@1.13.16
+Ok to proceed? (y) 

@@ -75,7 +75,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     },
     {
         title: 'Core Competencies',
-        skills: ['DSA', 'OOP', 'Deep Learning', 'Model Optimization', 'Data Analysis', 'Computer Vision', 'NLP'],
+        skills: ['Data Structures & Algorithms', 'Object-Oriented Programming', 'Deep Learning', 'Model Optimisation', 'Data Pipelines', 'Software Engineering Principles', 'Cross-functional Collaboration'],
     },
 ];
 
@@ -95,22 +95,20 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
         company: 'Acechem Remedies Pvt Ltd',
         period: 'Oct 2024 – Apr 2025',
         bullets: [
-            'Performed comprehensive data analysis on pharmaceutical datasets to drive business intelligence and operational improvements.',
-            'Created content strategies backed by data insights, increasing engagement metrics across digital platforms.',
-            'Built automated reporting pipelines using Python and Excel for monthly performance tracking.',
-            'Collaborated with cross-functional teams to translate data findings into actionable recommendations.',
+            'Analysed operational datasets using Excel and Google Sheets, surfacing key trends that informed decisions across 3+ departments.',
+            'Built and delivered 10+ research-driven presentations, converting raw data into actionable insights for cross-functional stakeholders.',
+            'Re-engineered data-reporting workflows, improving data accessibility and reducing decision-making turnaround time significantly.',
         ],
     },
     {
         id: 'kiit-research',
-        role: 'Machine Learning Intern',
-        company: 'KIIT University Biomedical Research',
+        role: 'Machine Learning Intern — Biomedical Research',
+        company: 'KIIT University',
         period: 'Dec 2024',
         bullets: [
-            'Conducted biomedical image classification research using deep learning architectures including CNN, ViT, and Swin Transformer.',
-            'Achieved 95% classification accuracy on retinal disease detection from fundus images.',
-            'Co-authored IEEE paper presented at OCIT conference, KIIT University.',
-            'Optimized model inference time while maintaining accuracy through architecture-level improvements.',
+            'Designed and trained Logistic Regression and K-Means Clustering models using Scikit-learn and Pandas to classify patient outcomes.',
+            'Built an end-to-end data pipeline including data cleaning, feature scaling, and feature engineering to eliminate bias in patient datasets.',
+            'Achieved 87% classification accuracy with an F1-score of 0.81, delivering a production-ready predictive diagnostic tool.',
         ],
     },
 ];
@@ -133,6 +131,7 @@ export interface Project {
     techStack: string;
     results: string;
     challenges: string;
+    image: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -153,6 +152,7 @@ export const PROJECTS: Project[] = [
         techStack: 'React Native (Expo), Node.js, Express, MongoDB, TensorFlow (LSTM demand forecasting), Hyperledger Fabric (blockchain tracking), Firebase (real-time notifications), Docker, AWS EC2.',
         results: 'Patent filed with the Indian Patent Office on February 7, 2026 for "Anti-Theft Blood Tracking and Optimization System." Platform currently in active development with pilot deployment planned. ML model achieves 87% accuracy in 7-day demand forecasting.',
         challenges: 'Integrating blockchain with real-time hospital workflows required careful latency optimization. Balancing gamification incentives to avoid perverse incentives (gaming the system) required behavioral design iteration. Cross-platform React Native performance on low-end Android devices required architecture-level optimizations.',
+        image: '/images/projects/rakshak.png',
     },
     {
         slug: 'iris',
@@ -171,6 +171,7 @@ export const PROJECTS: Project[] = [
         techStack: 'Python, PyTorch, torchvision, timm (pretrained models), OpenCV, Albumentations (augmentation), Weights & Biases (experiment tracking), Matplotlib, scikit-learn.',
         results: 'Achieved 95% classification accuracy with the Swin Transformer architecture, outperforming the CNN baseline (82%), ViT (89%), and YOLOv8-N (91%). The model demonstrated strong generalization across unseen test data with balanced performance across all disease classes. Results published as IEEE paper at OCIT conference.',
         challenges: 'Class imbalance in fundus image datasets required sophisticated augmentation strategies. Training Vision Transformers on limited data required careful transfer learning from ImageNet-21k pretrained weights. Inference speed optimization for potential edge deployment in clinical settings required architecture pruning.',
+        image: '/images/projects/iris.png',
     },
     {
         slug: 'urban-sound',
@@ -189,6 +190,7 @@ export const PROJECTS: Project[] = [
         techStack: 'Python, TensorFlow/Keras, Librosa (audio processing), NumPy, Pandas, scikit-learn, Matplotlib, Seaborn.',
         results: 'Achieved 92% overall accuracy on the UrbanSound8K dataset, a 20% improvement over the CNN-only baseline (72%). The hybrid architecture demonstrated superior performance on temporally complex sound classes (engine idling, jackhammer) where spatial-only features are insufficient. Smart city noise monitoring application potential validated.',
         challenges: 'Audio preprocessing consistency across different recording conditions required robust normalization. Finding the optimal fusion point between CNN and RNN branches required extensive architecture search. Managing computational cost of the BiLSTM component for potential real-time deployment required careful layer sizing.',
+        image: '/images/projects/urban-sound.png',
     },
 ];
 
@@ -205,7 +207,7 @@ export interface ResearchItem {
 export const RESEARCH_ITEMS: ResearchItem[] = [
     {
         type: 'patent',
-        title: 'Anti-Theft Blood Tracking and Optimization System',
+        title: 'Anti-Theft Blood Tracking and Optimization System with Citizen-Level Emergency Interface, ML-Based Demand Forecasting, Blockchain-Verified Chain of Custody, Gamified Donor Engagement, and Hierarchical Regulatory Compliance Automation',
         venue: 'Indian Patent Office',
         date: 'Filed: Feb 7, 2026',
         tag: 'PATENT FILED',
@@ -236,14 +238,14 @@ export const LEADERSHIP_ENTRIES: LeadershipEntry[] = [
         event: 'KIIT-FEST 7.0',
         stat: '500+',
         statLabel: 'Participants',
-        description: 'Led the organization of KIIT-FEST 7.0, coordinating 20+ universities and managing logistics for 500+ participants across multiple competitive events and workshops.',
+        description: 'Orchestrated a national-level technical and cultural festival with 500+ participants from 20+ universities across India. Spearheaded the Pitch It innovation competition for 30+ teams, managing logistics, judging coordination, and real-time issue resolution.',
     },
     {
         title: 'Event Organiser',
         event: 'BytoMania',
         stat: '1,000+',
         statLabel: 'Students',
-        description: 'Organized BytoMania, a flagship coding event that attracted 1,000+ students, managing event planning, sponsorships, and technical infrastructure.',
+        description: 'Coordinated logistics for 1,000+ students, collaborating with 5+ teams on crowd management and real-time issue resolution during the event. Demonstrated strong stakeholder communication and cross-team coordination skills under high-pressure, large-scale event conditions.',
     },
 ];
 
@@ -257,32 +259,32 @@ export interface Achievement {
 export const ACHIEVEMENTS: Achievement[] = [
     {
         title: 'Academic Excellence',
-        description: '9.66 CGPA — Highest in department',
+        description: 'Graduated with the highest CGPA of 9.66/10 at KIIT University across the Computer Science department.',
         icon: 'GraduationCap',
     },
     {
-        title: 'Best NSS Volunteer',
-        description: 'KIIT University — National Service Scheme',
+        title: 'Best NSS Volunteer (Unit-wise)',
+        description: 'Recognised by KIIT University for outstanding contributions to community service through the National Service Scheme.',
         icon: 'Heart',
     },
     {
         title: 'Rajya Puraskar',
-        description: 'Bharat Scouts and Guides — Highest state level award',
+        description: 'Received the highest state-level award from Bharat Scouts and Guides in recognition of exemplary scouting service.',
         icon: 'Award',
     },
     {
         title: 'Red Cross India',
-        description: 'Baliyatra humanitarian initiative — Community service',
+        description: 'Awarded a service certificate for participation in the Baliyatra humanitarian initiative.',
         icon: 'Shield',
     },
     {
         title: 'Data Analytics Certification',
-        description: 'Udemy — Comprehensive data analytics program',
+        description: 'Data Analytics (Udemy) — demonstrating continuous upskilling in ML and data disciplines.',
         icon: 'BarChart3',
     },
     {
         title: 'Machine Learning Certification',
-        description: 'Coursera — Stanford University ML specialization',
+        description: 'Machine Learning (Coursera) — demonstrating continuous upskilling in ML and data disciplines.',
         icon: 'Brain',
     },
 ];
@@ -305,7 +307,7 @@ export const EDUCATION_ENTRIES: EducationEntry[] = [
     },
     {
         institution: 'KIIT University',
-        degree: 'BSc Computer Science (Hons)',
+        degree: "Bachelor's of Science (Computer Science Hons)",
         period: 'Oct 2022 – Jul 2025',
         location: 'Bhubaneswar, Odisha',
         grade: 'CGPA: 9.66',

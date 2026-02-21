@@ -1,0 +1,62 @@
+
+> portfolio@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.5
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ΓÜá Compiled with warnings
+
+./src/components/sections/About.tsx
+Attempted import error: 'react-github-calendar' does not contain a default export (imported as 'GitHubCalendar').
+
+Import trace for requested module:
+./src/components/sections/About.tsx
+
+ ΓÜá Compiled with warnings
+
+./src/components/sections/About.tsx
+Attempted import error: 'react-github-calendar' does not contain a default export (imported as 'GitHubCalendar').
+
+Import trace for requested module:
+./src/components/sections/About.tsx
+
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined.
+    at nM (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61599)
+    at nN (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64546)
+    at nB (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67538)
+    at nM (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:58560)
+    at nN (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64546)
+    at nB (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67538)
+    at nD (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66680)
+    at nN (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64853)
+    at nB (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67538)
+    at nM (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:58560) {
+  digest: '2149604781'
+}
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined.
+    at nM (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61599)
+    at nN (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64546)
+    at nB (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67538)
+    at nM (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:58560)
+    at nN (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64546)
+    at nB (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67538)
+    at nD (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:66680)
+    at nN (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:64853)
+    at nB (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:67538)
+    at nM (C:\portfolio\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:58560)
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+ Γ£ô Generating static pages (9/9)
+
+> Export encountered errors on following paths:
+	/page: /
