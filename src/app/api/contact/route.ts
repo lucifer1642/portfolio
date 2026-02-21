@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import nodemailer from 'nodemailer';
 
-export const runtime = 'edge';
-
 const contactSchema = z.object({
     name: z.string().min(2).max(100),
     email: z.string().email().max(255),
